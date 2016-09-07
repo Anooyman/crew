@@ -4,39 +4,40 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-BeautifulSoup	bug.py	/^from bs4 import BeautifulSoup$/;"	i
-apk_name_exist	bug.py	/^def apk_name_exist(dic,name):$/;"	f	access:public
-creat_db	bug.py	/^def creat_db():$/;"	f	access:public
-crew	bug.py	/^def crew(end_num,mainurl,mydir):$/;"	f	access:public
-download_file	bug.py	/^def download_file(url):$/;"	f	access:public
-download_single_apk	bug.py	/^def download_single_apk(url,mydir):$/;"	f	access:public
-enter_detail_web	bug.py	/^def enter_detail_web(url,mainurl):$/;"	f	access:public
-find_apksize	bug.py	/^def find_apksize(dic,name):$/;"	f	access:public
-find_download_count	bug.py	/^def find_download_count(url):$/;"	f	access:public
-find_download_url	bug.py	/^def find_download_url(url):$/;"	f	access:public
-find_more_detail	bug.py	/^def find_more_detail(url):$/;"	f	access:public
-find_name	bug.py	/^def find_name(url):$/;"	f	access:public
-get_download_apk_info	bug.py	/^def get_download_apk_info(dirs):$/;"	f	access:public
-get_html	bug.py	/^def get_html(url):$/;"	f	access:public
-get_more_info	bug.py	/^def get_more_info(length,name,download_count,extent_url,download_url,num,mydir):$/;"	f	access:public
-get_simple_info	bug.py	/^def get_simple_info(url,start_num,fail_num,mainurl,mydir):$/;"	f	access:public
-getfilename	bug.py	/^def getfilename(dirs):$/;"	f	access:public
-getfilesize	bug.py	/^def getfilesize(dirs):$/;"	f	access:public
-getsize	bug.py	/^from os.path import join,getsize$/;"	i
-hashlib	bug.py	/^import hashlib$/;"	i
-insert_into_db	bug.py	/^def insert_into_db(name,download_count,size,updatetime,edition,mode,category,require):$/;"	f	access:public
-join	bug.py	/^from os.path import join,getsize$/;"	i
-judge	bug.py	/^def judge(app_info,name,detail_list,mydir):$/;"	f	access:public
-mainurl	bug.py	/^    mainurl = "http:\/\/www.appchina.com"$/;"	v
-md5_encrypt	bug.py	/^def md5_encrypt(name):$/;"	f	access:public
-mydir	bug.py	/^    mydir = 'download'$/;"	v
-os	bug.py	/^import os$/;"	i
-re	bug.py	/^import re$/;"	i
-requests	bug.py	/^import requests$/;"	i
-select_db	bug.py	/^def select_db(name):$/;"	f	access:public
-sqlite3	bug.py	/^import sqlite3$/;"	i
-sys	bug.py	/^import sys$/;"	i
-to_str	bug.py	/^def to_str(uncode):$/;"	f	access:public
-url	bug.py	/^    url = "http:\/\/www.appchina.com\/category\/30\/1_1_1_1_0_0_0.html"$/;"	v
-urllib	bug.py	/^import urllib$/;"	i
-urllib2	bug.py	/^import urllib2$/;"	i
+BeautifulSoup	crew.py	/^from bs4 import BeautifulSoup$/;"	i
+apk_exist	crew.py	/^def apk_exist(dic,name):$/;"	f	access:public
+creat_db	crew.py	/^def creat_db():$/;"	f	access:public
+crew	crew.py	/^def crew(end_page,mainurl,mydir):$/;"	f	access:public
+download_apk	crew.py	/^def download_apk(url,mydir):$/;"	f	access:public
+end_page	crew.py	/^        end_page = 1$/;"	v
+end_page	crew.py	/^        end_page = int(sys.argv[1])$/;"	v
+enter_detail_web	crew.py	/^def enter_detail_web(url,mainurl):$/;"	f	access:public
+find_apksize	crew.py	/^def find_apksize(dic,name):$/;"	f	access:public
+find_download_count	crew.py	/^def find_download_count(url):$/;"	f	access:public
+find_download_url	crew.py	/^def find_download_url(url):$/;"	f	access:public
+find_more_detail	crew.py	/^def find_more_detail(url):$/;"	f	access:public
+find_name	crew.py	/^def find_name(url):$/;"	f	access:public
+get_download_apk_info	crew.py	/^def get_download_apk_info(dirs):$/;"	f	access:public
+get_html	crew.py	/^def get_html(url):$/;"	f	access:public
+get_simple_info	crew.py	/^def get_simple_info(url,start_num,fail_num,mainurl,mydir):$/;"	f	access:public
+getfilename	crew.py	/^def getfilename(dirs):$/;"	f	access:public
+getfilesize	crew.py	/^def getfilesize(dirs):$/;"	f	access:public
+getsize	crew.py	/^from os.path import join,getsize$/;"	i
+hashlib	crew.py	/^import hashlib$/;"	i
+insert_into_db	crew.py	/^def insert_into_db(name,download_count,size,updatetime,edition,mode,category,require):$/;"	f	access:public
+join	crew.py	/^from os.path import join,getsize$/;"	i
+judge	crew.py	/^def judge(app_info,name,detail_list,mydir,url):$/;"	f	access:public
+main_crew	crew.py	/^def main_crew(length,name,download_count,extent_url,download_url,num,mydir):$/;"	f	access:public
+mainurl	crew.py	/^    mainurl = "http:\/\/www.appchina.com"$/;"	v
+md5_encrypt	crew.py	/^def md5_encrypt(name):$/;"	f	access:public
+mydir	crew.py	/^    mydir = 'download'$/;"	v
+os	crew.py	/^import os$/;"	i
+re	crew.py	/^import re$/;"	i
+requests	crew.py	/^import requests$/;"	i
+select_db	crew.py	/^def select_db(name):$/;"	f	access:public
+sqlite3	crew.py	/^import sqlite3$/;"	i
+sys	crew.py	/^import sys$/;"	i
+to_str	crew.py	/^def to_str(uncode):$/;"	f	access:public
+url	crew.py	/^    url = "http:\/\/www.appchina.com\/category\/30\/1_1_1_1_0_0_0.html"$/;"	v
+urllib	crew.py	/^import urllib$/;"	i
+urllib2	crew.py	/^import urllib2$/;"	i

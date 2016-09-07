@@ -114,19 +114,18 @@ def get_simple_info(url,start_num,fail_num,mainurl,mydir):
     num = [start_num, fail_num]
     name = find_name(url)
     download_count = find_download_count(url)
-    extent_url = enter_detail_web(url,mainurl)
     length = len(name)
     download_url = enter_detail_web(url,mainurl)
-    return main_crew(length,name,download_count,extent_url,download_url,num,mydir)
+    return main_crew(length,name,download_count,download_url,num,mydir)
 
 #进入app单独页面，得到详细信息并下载
-def main_crew(length,name,download_count,extent_url,download_url,num,mydir):
+def main_crew(length,name,download_count,download_url,num,mydir):
     for item in range(length):
         num[0] = num[0] + 1
         try:
             app_info = []
             detail_list = []
-            for detail in find_more_detail(extent_url[item]):
+            for detail in find_more_detail(download_url[item]):
                 detail_list.append(to_str(detail))
             app_info = select_db(to_str(name[item]))
             if len(app_info) != 0:
@@ -255,5 +254,10 @@ if __name__ == '__main__':
     else:
         end_page = int(sys.argv[1])
 
-    creat_db()
-    crew(end_page,mainurl,mydir)
+#    creat_db()
+#    crew(end_page,mainurl,mydir)
+    a = select_db('QQ')
+    for item in a :
+        print item
+
+    
